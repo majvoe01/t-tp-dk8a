@@ -3,9 +3,438 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test3</title>
+<meta name="description" content="Tæt på DK – find de gode oplevelser lige i nærheden.">
+    <title>Tæt på DK | Oplevelser lige i nærheden</title>
+    <style>
+        :root {
+            --ink: #17352f;
+            --muted: #63756f;
+            --cream: #f6f4ee;
+            --paper: #fffdf8;
+            --sage: #dbe8dc;
+            --orange: #e77146;
+            --line: rgba(23, 53, 47, .14);
+            --shadow: 0 18px 50px rgba(23, 53, 47, .1);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            color: var(--ink);
+            background: var(--cream);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .topbar {
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            width: 100%;
+            color: white;
+        }
+
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: min(1180px, calc(100% - 48px));
+            margin: 0 auto;
+            padding: 28px 0;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.05rem;
+            font-weight: 800;
+            letter-spacing: .16em;
+            text-transform: uppercase;
+        }
+
+        .brand-mark {
+            display: grid;
+            width: 34px;
+            height: 34px;
+            place-items: center;
+            border: 2px solid currentColor;
+            border-radius: 50%;
+            font-size: .72rem;
+            letter-spacing: 0;
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            gap: 29px;
+            font-size: .85rem;
+            font-weight: 700;
+        }
+
+        .menu a {
+            opacity: .88;
+            transition: opacity .2s ease;
+        }
+
+        .menu a:hover,
+        .menu a:focus-visible {
+            opacity: 1;
+        }
+
+        .menu .menu-cta {
+            padding: 11px 17px;
+            border: 1px solid rgba(255, 255, 255, .65);
+            border-radius: 999px;
+            opacity: 1;
+        }
+
+        .hero {
+            position: relative;
+            display: flex;
+            min-height: min(760px, 92vh);
+            align-items: flex-end;
+            overflow: hidden;
+            color: white;
+            background:
+                linear-gradient(90deg, rgba(16, 44, 38, .83) 0%, rgba(16, 44, 38, .41) 50%, rgba(16, 44, 38, .09) 100%),
+                url("4C83.jfif") center / cover;
+        }
+
+        .hero-content {
+            width: min(1180px, calc(100% - 48px));
+            margin: 0 auto;
+            padding: 150px 0 112px;
+        }
+
+        .eyebrow {
+            margin: 0 0 18px;
+            color: #d7ecda;
+            font-size: .78rem;
+            font-weight: 800;
+            letter-spacing: .18em;
+            text-transform: uppercase;
+        }
+
+        h1,
+        h2,
+        p {
+            margin-top: 0;
+        }
+
+        h1 {
+            max-width: 690px;
+            margin-bottom: 24px;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: clamp(3.5rem, 8vw, 6.8rem);
+            font-weight: 400;
+            letter-spacing: -.055em;
+            line-height: .92;
+        }
+
+        .hero-copy {
+            max-width: 480px;
+            margin-bottom: 32px;
+            color: rgba(255, 255, 255, .9);
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            gap: 14px;
+            padding: 15px 21px;
+            border-radius: 999px;
+            background: var(--orange);
+            color: white;
+            font-size: .88rem;
+            font-weight: 800;
+            transition: transform .2s ease, background .2s ease;
+        }
+
+        .button:hover,
+        .button:focus-visible {
+            background: #d85e35;
+            transform: translateY(-2px);
+        }
+
+        .button::after {
+            content: "→";
+            font-size: 1.1rem;
+        }
+
+        .intro {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(260px, .7fr);
+            gap: 80px;
+            align-items: end;
+            width: min(1180px, calc(100% - 48px));
+            margin: 0 auto;
+            padding: 106px 0 86px;
+        }
+
+        .intro h2 {
+            max-width: 640px;
+            margin-bottom: 0;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: clamp(2.3rem, 4vw, 4.2rem);
+            font-weight: 400;
+            letter-spacing: -.045em;
+            line-height: 1;
+        }
+
+        .intro p {
+            margin-bottom: 0;
+            color: var(--muted);
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        .discover {
+            padding: 72px 0 100px;
+            background: var(--sage);
+        }
+
+        .discover-inner {
+            width: min(1180px, calc(100% - 48px));
+            margin: 0 auto;
+        }
+
+        .section-heading {
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+            gap: 30px;
+            margin-bottom: 35px;
+        }
+
+        .section-heading h2 {
+            margin-bottom: 0;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: clamp(2.1rem, 4vw, 3.6rem);
+            font-weight: 400;
+            letter-spacing: -.04em;
+        }
+
+        .section-heading a {
+            border-bottom: 1px solid var(--ink);
+            padding-bottom: 5px;
+            font-size: .83rem;
+            font-weight: 800;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            min-height: 270px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 25px;
+            border-radius: 4px;
+            background: var(--paper);
+            box-shadow: var(--shadow);
+        }
+
+        .card:nth-child(2) {
+            background: #ecdfcb;
+        }
+
+        .card:nth-child(3) {
+            background: #e3d8e2;
+        }
+
+        .card-label {
+            margin-bottom: auto;
+            color: var(--muted);
+            font-size: .76rem;
+            font-weight: 800;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+        }
+
+        .card h3 {
+            margin: 55px 0 9px;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 1.8rem;
+            font-weight: 400;
+        }
+
+        .card p {
+            margin-bottom: 0;
+            color: var(--muted);
+            font-size: .92rem;
+            line-height: 1.5;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            width: min(1180px, calc(100% - 48px));
+            margin: 0 auto;
+            padding: 30px 0;
+            color: var(--muted);
+            font-size: .8rem;
+        }
+
+        @media (max-width: 800px) {
+            .menu {
+                gap: 13px;
+                font-size: .75rem;
+            }
+
+            .menu a:nth-child(-n+4) {
+                display: none;
+            }
+
+            .menu .menu-cta {
+                padding: 9px 13px;
+            }
+
+            .intro {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .card {
+                min-height: 220px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .nav-inner,
+            .hero-content,
+            .intro,
+            .discover-inner,
+            footer {
+                width: min(100% - 32px, 1180px);
+            }
+
+            .nav-inner {
+                padding-top: 18px;
+            }
+
+            .brand {
+                font-size: .84rem;
+            }
+
+            .brand-mark {
+                width: 30px;
+                height: 30px;
+            }
+
+            .hero-content {
+                padding-bottom: 70px;
+            }
+
+            .hero {
+                min-height: 720px;
+                background-position: 60% center;
+            }
+
+            .section-heading {
+                display: block;
+            }
+
+            .section-heading a {
+                display: inline-block;
+                margin-top: 18px;
+            }
+
+            footer {
+                display: block;
+            }
+
+            footer span {
+                display: block;
+                margin-bottom: 8px;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <header class="topbar">
+        <nav class="nav-inner" aria-label="Hovednavigation">
+            <a class="brand" href="#top" aria-label="Tæt på DK forside">
+                <span class="brand-mark">DK</span>
+                <span>Tæt på</span>
+            </a>
+            <div class="menu">
+                <a href="#om-os">Om os</a>
+                <a href="#inspiration">Inspiration</a>
+                <a href="#destinationer">Destinationer</a>
+                <a href="#oplevelser">Oplevelser</a>
+                <a class="menu-cta" href="#planlaeg">Planlæg din tur</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="top">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <p class="eyebrow">Små eventyr · Store minder</p>
+                <h1 id="hero-title">Oplev mere.<br>Rejs tættere på.</h1>
+                <p class="hero-copy">Danmark er fuld af steder, du endnu ikke har set. Find din næste oplevelse lige rundt om hjørnet.</p>
+                <a class="button" href="#inspiration">Find inspiration</a>
+            </div>
+        </section>
+
+        <section class="intro" id="om-os">
+            <h2>Det bedste ved Danmark er tættere på, end du tror.</h2>
+            <p>Vi samler de personlige anbefalinger, skjulte perler og gode historier, der gør det nemt at holde ferie hjemme. Tag afsted for en dag eller bliv lidt længere.</p>
+        </section>
+
+        <section class="discover" id="inspiration">
+            <div class="discover-inner">
+                <div class="section-heading">
+                    <h2>Hvor skal turen gå hen?</h2>
+                    <a href="#destinationer">Se alle destinationer →</a>
+                </div>
+                <div class="cards">
+                    <article class="card" id="destinationer">
+                        <span class="card-label">Kyst & natur</span>
+                        <h3>Ud i det blå</h3>
+                        <p>Frisk luft, lange strande og ro til at sænke skuldrene.</p>
+                    </article>
+                    <article class="card" id="oplevelser">
+                        <span class="card-label">By & kultur</span>
+                        <h3>Nye sider af byen</h3>
+                        <p>Lokale smage, levende gader og historier lige under overfladen.</p>
+                    </article>
+                    <article class="card" id="planlaeg">
+                        <span class="card-label">Weekend væk</span>
+                        <h3>Tid til hinanden</h3>
+                        <p>Find et hyggeligt sted at bo og gør weekenden lidt længere.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <span>© 2026 Tæt på DK</span>
+        <span>Rejs lokalt. Oplev mere.</span>
+    </footer>
 </body>
 </html>
