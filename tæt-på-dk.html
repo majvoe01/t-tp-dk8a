@@ -3,9 +3,316 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test3</title>
+    <title>Tæt på DK</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">  
 </head>
 <body>
-    
+    <header>
+        <div>
+            <h1>TÆT PÅ DK</h1>
+        </div>
+        <nav>
+            <a href="#">Udforsk</a>
+            <a href="#">Byg din rute</a>
+            <a href="#">Fællesskab</a>
+            <a href="#">Seværdigheder</a>
+            <a href="#">Pakketilbud</a>
+        </nav>
+        <div class="bruger-links">
+            <a href="#">Gemt</a>
+            <a href="#">Profil</a>
+            <a href="#">Min kurv</a>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Tættere på,<br>end du tror.</h2>
+            <p>Planlæg din rejse i Danmark</p>
+            <a href="#step1" class="hero-button">Byg din rute <span class="arrow-icon">→</span></a>
+        </div>
+        <div class="hero-kategorier">
+            <a href="#">Hike ruter</a>
+            <a href="#">Cykel ture</a>
+            <a href="#">Roadtrip</a>
+            <a href="#">Ophold</a>
+
+        </div>
+        
+    </section>
+<div class="quiz-kort-layout">
+    <div class="quiz-area">
+    <section id="step1" class="quiz-step">
+        <h2>Hvad vil du opleve?</h2>
+        <p>Vælg en eller flere ting</p>
+        <button>
+            <span>🥾Vandreture</span>
+        </button>
+        <button>
+            <span>🌿Natur</span>
+        </button>
+        <button>
+            <span>🏖️Strand</span>
+        </button>
+        <button>
+            <span>🏙️Storbyer</span>
+        </button>
+        <button>
+            <span>🏛️Museer</span>
+        </button>
+        <button>
+            <span>🎭Kultur</span>
+        </button>
+        <button>
+            <span>🎨Kunst & Design</span>
+        </button>
+        <button>
+            <span>🎉Events</span>
+        </button>
+        <button>
+            <span>🎢Aktiviteter</span>
+        </button>
+        <button>
+            <span>☕Caféer & Resturanter</span>
+        </button>
+        <button>
+            <span>🌃Byliv & Social</span>
+        </button>
+        <button>
+            <span>🧘Wellness</span>
+        </button>
+        <button class="nextButton1">
+            <span>Næste</span>
+        </button>
+    </section>
+    <section id="step2"class="quiz-step">
+        <h2>Hvordan vil du rejse?</h2>
+        <p>Vælg en eller flere transportformer</p>
+        <button>
+            <span>🚗Bil</span>
+        </button>
+        <button>
+            <span>🚶Gå</span>
+        </button>
+        <button>
+            <span>🚆Offentlig transport</span>
+        </button>
+        <button>
+            <span>🚴Cykel</span>
+        </button>
+        <button class="nextButton2">
+            <span>Næste</span>
+        </button>
+        <button class="backButton1">
+            <span>Tilbage</span>
+        </button>
+    </section>
+    <section id="step3"class="quiz-step">
+        <h2>Hvem rejser med dig?</h2>
+        <p>Vælg en eller flere</p>
+        <button>
+            <span>👤Solo</span>
+        </button>
+        <button>
+            <span>🫂venner</span>
+        </button>
+        <button>
+            <span>👨‍👩‍👧‍👦Familie</span>
+        </button>
+        <button>
+            <span>👥Gruppe</span>
+        </button>
+        <button>
+            <span>💑I par</span>
+        </button>
+        <button class="nextButton3">
+            <span>Næste</span>
+        </button>
+        <button class="backButton2">
+            <span>Tilbage</span>
+        </button>
+    </section>
+    <section id="step4"class="quiz-step">
+        <h2>Hvor starter turen?</h2>
+        <p>Vælg dit udgangspunkt</p>
+        <button>
+            <span>København</span>
+        </button>
+        <button>
+            <span>Aarhus</span>
+        </button>
+        <button>
+            <span>Odense</span>
+        </button>
+        <button>
+            <span>Aalborg</span>
+        </button>
+        <input type="text" placeholder="Søg efter din by...">
+        <button class="nextButton4">
+            <span>Næste</span>
+        </button>
+        <button class="backButton3">
+            <span>Tilbage</span>
+        </button>
+    </section>
+    <section id="step5"class="quiz-step">
+        <h2>Hvad er dig budget for hele turen?</h2>
+        <p>Vælg dit maksimale budget</p>
+        <button>
+            <span>Under 2.000kr.</span>
+        </button>
+        <button>
+            <span>2.000-6.000kr.</span>
+        </button>
+        <button>
+            <span>6.0000-10.000kr.</span>
+        </button>
+        <button>
+            <span>Over 10.000kr.</span>
+        </button>
+        <button class="nextButton5">
+            <span>Næste</span>
+        </button>
+        <button class="backButton4">
+            <span>Tilbage</span>
+        </button>
+    </section>
+    <section id="step6"class="quiz-step">
+        <h2>Hvor lang tid har du?</h2>
+        <p>Vælg antal dage</p>
+        <input type="range" min="1" max="28" value="3">
+        <button>
+            <span>Weekend</span>
+        </button>
+        <button>
+            <span>1 uge</span>
+        </button>
+        <button>
+            <span>1 måned</span>
+        </button>
+        <button class="nextButton6">
+            <span>Næste</span>
+        </button>
+        <button class="backButton5">
+            <span>Tilbage</span>
+        </button>
+    </section>
+    <section id="step7"class="quiz-step">
+        <h2>Hvor mange stop vil du opleve?</h2>
+        <p>Vælg dit rejsetempo</p>
+        <button>
+            <span>Ét sted</span>
+            <p>Dyb udforskning af ét område</p>
+        </button>
+        <button>
+            <span>Afslappet tempo</span>
+            <p>2-3 destinationer med god tid</p>
+        </button>
+        <button>
+            <span>Balancered rundtur</span>
+            <p>4-5 destinationer</p>
+        </button>
+        <button>
+            <span>Seriøs sight-seeing</span>
+            <p>6-8 destinationer</p>
+        </button>
+        <button>
+            <span>Se alt muligt</span>
+            <p>9+ destinationer</p>
+        </button>
+        <button class="nextButton7">
+            <span>Næste</span>
+        </button>
+        <button class="backButton6">
+            <span>Tilbage</span>
+        </button>
+    </section>
+    <section id="step8"class="quiz-step">
+        <h2>Hvad er din geografiske rækkevidde?</h2>
+        <p>Vælg en eller flere muligheder</p>
+        <button>
+            <span>Ét område</span>
+            <p>Fokuseret på et enkelt område</p>
+        </button>
+        <button>
+            <span>Flere områder</span>
+            <p>Udforsk forskellige regioner</p>
+        </button>
+        <button>
+            <span>Hele danmark</span>
+            <p>Se så meget som muligt</p>
+        </button>
+        <button>
+            <span>Ø-hop</span>
+            <p>Besøg flere danske Øer</p>
+        </button>
+        <button class="nextButton8">
+            <span>Næste</span>
+        </button>
+        <button class="backButton7">
+            <span>Tilbage</span>
+        </button>
+    </section>
+    <section id="step9"class="quiz-step">
+        <h2>Hvad er dine overnatningspræferencer?</h2>
+        <p>Vælg en eller flere</p>
+        <button>
+            <span>Hoteller</span>
+        </button>
+        <button>
+            <span>Hostels</span>
+        </button>
+        <Button>
+            <span>Bed&Breakfast</span>
+        </Button>
+        <button>
+            <span>Shelters</span>
+        </button>
+        <Button>
+            <span>Airbnb</span>
+        </Button>
+        <button>
+            <Span>Camping</Span>
+        </button>
+        <button class="backButton8">
+            <span>Tilbage</span>
+        </button>
+        <button class="Build-button">
+            <span>Byg min rute</span>
+        </button>
+    </section>
+    </div>
+    <section class="udforsk">
+        <div class="udforsk-content">
+            <h2>Udforsk mulighederne</h2>
+            <p>Find inspiration til din tur</p>
+            <div class="udforsk-buttons">
+                <button>
+                    <span>Hike ruter</span>
+                </button>
+                <button>
+                    <span>Cykel ruter</span>
+                </button>
+                <button>
+                    <span>Seværdigheder</span>
+                </button>
+                <button>
+                    <span>Roadtrip</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="udforsk-kort">
+            <div class="kort">
+                <img src="dk.jpg" alt="kort af dk">
+
+            </div>
+        </div>
+
+    </section>
+</div>
+    <script src="javascript.js"></script>
 </body>
 </html>
