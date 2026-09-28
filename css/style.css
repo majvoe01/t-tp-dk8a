@@ -3,13 +3,16 @@
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 .options {
     display: flex;
     justify-content: center;
     gap: 2%;
     padding: 5%;
     margin: 0 auto;
-
 }
 
 .button {
