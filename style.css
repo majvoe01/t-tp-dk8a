@@ -108,8 +108,17 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     gap: 2%;
-    padding: 5%;
+    padding: 3% 5%;
     margin: 0 auto;
+}
+
+.options .button {
+    background-color: #BFD8B8;
+    color: #6B4F3A;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .options h2 {
@@ -117,40 +126,6 @@ a {
     margin-bottom: 30px;
 }
 
-.button {
-    position: relative;
-    display: inline-block;
-    width: 22%;
-    margin: 0;
-    vertical-align: top;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-}
-
-.button:hover {
-    transform: scale(1.05);
-}
-
-.button img {
-    aspect-ratio: 4/3;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-    display: block;
-    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7);
-    filter: brightness(85%);
-}
-
-.button .text {
-    position: absolute;
-    bottom: 12%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    font-size: clamp(16px, 4vw, 40px);
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
 
 .moods {
     padding: 80px 40px;
@@ -165,22 +140,29 @@ a {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 25px;
-    border-radius: 10px;
-    overflow: hidden;
 }
 
 .mood-card {
      background: #BFD8B8;
     border-radius: 20px;
     text-align: center;
+    overflow: hidden;
+    min-height: 280px;
 }
+
+.mood-card span {
+    display: block;
+    padding-top: 15px;
+}
+
 .mood-card h3 {
     color: #6B4F3A;
+    padding: 5px 15px 20px;
 }
 
 .mood-grid img {
     width: 100%;
-    height: 150px;
+    height: 180px;
     object-fit: cover;
     display: block;
 }
