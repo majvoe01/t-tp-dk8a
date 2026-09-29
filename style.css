@@ -7,7 +7,8 @@
 }
 body {
     font-family: "airbnb-cereal-app", sans-serif;
-    background-color: #F4F0E6;
+    background-color: #F5F1E8;
+    color: #4A382C;
 }
 
 h2 {
@@ -48,7 +49,7 @@ h1 {
 .logo {
     font-size: 20px;
     font-weight: bold;
-    color: #263d25;
+    color: #36541D;
 }
 
 nav {
@@ -57,7 +58,7 @@ nav {
 }
 nav a {
     text-decoration: none;
-    color: #263d25;
+    color: #36541D;
     font-size: 16px;
 }
 
@@ -107,18 +108,26 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2%;
+    gap: 35px;
     padding: 3% 5%;
     margin: 0 auto;
 }
 
 .options .button {
-    background-color: #BFD8B8;
-    color: #6B4F3A;
-    padding: 15px 35px;
+    background-color: #A1BA8C;
+    color: #1B3308;
+    padding: 10px 32px;
     border-radius: 30px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 17px;
+    transition: 0.3s ease;
+    border: 2px solid #66874A;
+}
+
+.options .button:hover {
+    background-color: #66874A;
+    color: #F4F0E6;
+    transform: translateY(-3px);
 }
 
 .options h2 {
@@ -128,12 +137,13 @@ a {
 
 
 .moods {
-    padding: 80px 40px;
+    padding: 45px 40px;
 }
 
 .moods h2 {
-    color: #6B4F3A;
-    margin-bottom: 10px;
+    color: #36541D;
+    font-size: 30px;
+    margin-bottom: 25px;
 }
 
 .mood-grid {
@@ -143,11 +153,16 @@ a {
 }
 
 .mood-card {
-     background: #BFD8B8;
+     background: #F5F1E8;
     border-radius: 20px;
     text-align: center;
     overflow: hidden;
     min-height: 280px;
+    border: 6px solid #A1BA8C;
+}
+
+.mood-card:hover {
+    transform: translateY(-5px);
 }
 
 .mood-card span {
@@ -156,7 +171,7 @@ a {
 }
 
 .mood-card h3 {
-    color: #6B4F3A;
+    color: #36541D;
     padding: 5px 15px 20px;
 }
 
