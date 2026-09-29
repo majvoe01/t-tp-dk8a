@@ -1,12 +1,22 @@
+/* ===== GENERELT ===== */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body {
-    font-family: "Manrope", sans-serif;
+    font-family: "airbnb-cereal-app", sans-serif;
     background-color: #F4F0E6;
 }
+
+h2 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* ===== HEADER ===== */
+
 header {
     height: 80px;
     background-color: #F4F0E6;
@@ -26,14 +36,16 @@ nav {
     display: flex;
     gap: 40px;
 }
-
 nav a {
     text-decoration: none;
     color: #263d25;
     font-size: 16px;
 }
+
+/* ===== HERO ===== */
+
 .hero {
-    height: 65vh; /* Fylder hele skærmens højde */
+    height: 65vh; 
     background-image: url("img/kano.jpg");
     background-size: cover;
     background-position: center;
@@ -42,13 +54,22 @@ nav a {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding-top: 140px;
-
     align-items: flex-start;
-    text-align: left;
+
+    padding-top: 140px;
     padding-left: 70px;
 
     color: #F4F0E6;
+}
+
+.hero h1 {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
 }
 
 .hero-knap {
@@ -62,34 +83,23 @@ nav a {
     font-size: 16px;
 }
 
+/* ===== MOODS ===== */
 
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+.moods {
+    padding: 80px 40px;
 }
 
-.hero p {
-    font-size: 1.5rem;
-}
-
-.moods {padding: 80px 40px;}
 .moods h2 {
     color: #6B4F3A;
-    font-size: 1,5rem;
     margin-bottom: 10px;
 }
+
 .mood-grid {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 25px;
     border-radius: 10px;
     overflow: hidden;
-}
-.mood-grid img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    display: block;
 }
 
 .mood-card {
@@ -101,11 +111,13 @@ nav a {
     color: #6B4F3A;
 }
 
-h2 {
-    font-family: "Playfair Display", serif;
-    font-size: 28px;
-    font-weight: 600;
+.mood-grid img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
 }
+
 
 .text {
     padding: 20px 5px;
