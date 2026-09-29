@@ -35,6 +35,13 @@ header {
     z-index: 10;
 }
 
+.bruger-links {
+    display: flex;
+    gap: 20px;
+    white-space: nowrap;
+    justify-content: flex-end;
+}
+
 .logo {
     font-size: 20px;
     font-weight: bold;
