@@ -17,7 +17,6 @@ h2 {
 
 /* ===== HEADER ===== */
 
-
 header {
     position: absolute;
     top: 0;
@@ -35,6 +34,7 @@ header {
 
     z-index: 10;
 }
+
 .logo {
     font-size: 20px;
     font-weight: bold;
