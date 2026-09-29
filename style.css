@@ -35,6 +35,9 @@ header {
     z-index: 10;
 }
 
+h1 {
+    font-size: 20px;
+}
 .bruger-links {
     display: flex;
     gap: 20px;
