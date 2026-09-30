@@ -6,10 +6,14 @@
 
 h1 {
     color: #1B3308;
+    font-family: "airbnb-cereal-app", sans-serif;
+    font-size: 32px;
 }
 
 p {
     color: #222222;
+    font-family: "airbnb-cereal-app", sans-serif;
+    font-size: 20px;
 }
 
 h2 {
@@ -20,3 +24,11 @@ h2 {
     color: #F5F1E8;
 }
 
+.photo {
+    width: 25%;
+    height: auto;
+}
+
+.green-background {
+    background-color: #A1BA8C;
+}
