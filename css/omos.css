@@ -3,10 +3,14 @@
     margin: 0;
     background-color: #F5F1E8;
 }
+
+.headbillede {
+    height: 200px;
+}
 _____________
 --section 1--
 
-.del1 {
+.textbox1 {
     margin: 0 140px;
 }
 
@@ -37,4 +41,15 @@ h2 {
 
 .green-background {
     background-color: #A1BA8C;
+}
+__________________
+--billedegalleri--
+
+.billedegalleri {
+    display: flex;
+}
+
+.photo {
+    width: 25%;
+    aspect-ratio: 1/1;
 }
