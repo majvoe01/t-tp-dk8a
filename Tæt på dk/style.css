@@ -204,9 +204,6 @@ header a {
     letter-spacing: 1.4px;
     text-transform: uppercase;
 }
-.produkt-sektion:nth-child(even) .produkt-label {
-    color: #f5f1e8;
-}
 
 /* produkt sektionens overskrift */
 .produkt-heading h2 {
@@ -214,9 +211,6 @@ header a {
     color: #1b3308;
     font-size: clamp(28px, 4vw, 42px);
     line-height: 1.1;
-}
-.produkt-sektion:nth-child(even) .produkt-heading h2 {
-    color: #f5f1e8;
 }
 
 /* "Se alle produkter" link (ikke lavet videre) */
