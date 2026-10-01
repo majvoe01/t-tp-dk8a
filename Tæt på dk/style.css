@@ -69,6 +69,7 @@ header a {
     font-size: 14px;
     font-weight: 600;
 }
+/* hero sektion billede */
 .hero {
     height: 600px;
     margin: 0;
@@ -88,11 +89,12 @@ header a {
     width: 500px;
     margin-left: 80px;
 }
+/* hero tekst */
 .hero h2 {
     font-family: "airbnb-cereal-app", sans-serif;
     font-size: 64px;
     line-height: 1;
-    color: white;
+    color: #f5f1e8;
     margin: 0 0 10px;
     font-weight: 1000;
     margin-left: 0;
@@ -101,32 +103,13 @@ header a {
     max-width: 400px;
     font-family: "airbnb-cereal-app", sans-serif;
     font-size: 20px;
-    color: white;
+    color: #f5f1e8;
     margin-bottom: 50px;
     font-weight: 1000;
     margin-left: 0;
 }
-.hero-button {
 
-    padding: 12px 40px;
-    border-radius: 10px;
-    text-decoration: none;
-    display: inline-block;
-    margin-left: 0;
-
-    background: #665B46;
-    color: white;
-
-    font-family: "airbnb-cereal-app", sans-serif;
-    font-size: 15px;
-    font-weight: 1000;
-}
-.hero-button:hover {
-    background: #f5f1e8;
-    color: #1b3308;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    transform: translateY(-1px);
-}
+/* hero kategori sektioner */
 .hero-kategorier{
    position: absolute;
    bottom: 60px;
@@ -152,7 +135,7 @@ header a {
     display: inline-block;
     width: 3px;
     height: 14px;
-    background-color: white;
+    background-color: #f5f1e8;
     margin-left: 25px;
 }
 
@@ -163,122 +146,9 @@ header a {
     text-align: center;
 }
 
-.hero-intro-label {
-    margin: 0 0 10px;
-    color: #85ce46;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-}
 
-.hero-intro h2 {
-    margin: 0 0 14px;
-    color: #2f3e2f;
-    font-size: clamp(28px, 4vw, 44px);
-    line-height: 1.1;
-}
 
-.hero-intro-text {
-    max-width: 560px;
-    margin: 0 auto;
-    color: #5c685e;
-    font-size: 17px;
-    line-height: 1.6;
-}
-
-.emner {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 80px 30px;
-}
-
-.emner-heading {
-    margin-bottom: 30px;
-}
-
-.emner-label {
-    margin: 0 0 8px;
-    color: #66874a;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-}
-
-.emner h2 {
-    margin: 0;
-    color: #2f3e2f;
-    font-size: clamp(28px, 4vw, 44px);
-}
-
-.emne-liste {
-    display: grid;
-    gap: 20px;
-}
-
-.emne-row {
-    display: grid;
-    grid-template-columns: 260px minmax(0, 1fr);
-    min-height: 190px;
-    overflow: hidden;
-    border-radius: 18px;
-    background: #fff;
-    box-shadow: 0 8px 20px rgba(47, 62, 47, 0.1);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.emne-row:hover {
-    box-shadow: 0 14px 28px rgba(47, 62, 47, 0.17);
-    transform: translateY(-3px);
-}
-
-.emne-row img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.emne-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 28px 34px;
-}
-
-.emne-info h3 {
-    margin: 0 0 8px;
-    color: #2f3e2f;
-    font-size: 21px;
-    font-weight: 800;
-}
-
-.emne-info p {
-    max-width: 620px;
-    margin: 0 0 18px;
-    color: #5c685e;
-    line-height: 1.55;
-}
-
-.emne-link {
-    color: #42e46d;
-    font-size: 14px;
-    font-weight: 800;
-    text-decoration: none;
-}
-
-.emne-link span {
-    display: inline-block;
-    margin-left: 7px;
-    transition: transform 0.2s ease;
-}
-
-.emne-link:hover span,
-.emne-link:focus-visible span {
-    transform: translateX(4px);
-}
-
+/* Dette er en media query, der ændrer layoutet for skærme med en bredde på 600px eller mindre. */
 @media (max-width: 600px) {
     .emne-row {
         grid-template-columns: 1fr;
@@ -294,7 +164,7 @@ header a {
         padding: 55px 20px;
     }
 }
-
+/* Sektioner med produkter */
 .produkter {
     max-width: 1400px;
     margin: 0 auto;
@@ -305,13 +175,13 @@ header a {
     scroll-margin-top: 24px;
     padding: 55px 0;
 }
-
+/* Baggrundsfarve for hver anden produkt sektion */
 .produkt-sektion:nth-child(even) {
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
     border-radius: 0;
     background-color: #a1ba8c;
-    padding-inline: max(30px, calc((100vw - 1400px) / 2 + 30px));
+    padding-inline: max(30px, calc((100vw - 1400px) / 2));
 }
 
 .produkt-sektion + .produkt-sektion {
@@ -325,7 +195,7 @@ header a {
     gap: 24px;
     margin-bottom: 26px;
 }
-
+/* Produkt sektionens label (lille tekst)*/
 .produkt-label {
     margin: 0 0 7px;
     color: #1b3308;
@@ -334,14 +204,22 @@ header a {
     letter-spacing: 1.4px;
     text-transform: uppercase;
 }
+.produkt-sektion:nth-child(even) .produkt-label {
+    color: #f5f1e8;
+}
 
+/* produkt sektionens overskrift */
 .produkt-heading h2 {
     margin: 0;
-    color: #2f3e2f;
+    color: #1b3308;
     font-size: clamp(28px, 4vw, 42px);
     line-height: 1.1;
 }
+.produkt-sektion:nth-child(even) .produkt-heading h2 {
+    color: #f5f1e8;
+}
 
+/* "Se alle produkter" link (ikke lavet videre) */
 .alle-produkter {
     flex-shrink: 0;
     border-bottom: 1px solid currentColor;
@@ -351,18 +229,17 @@ header a {
     padding-bottom: 4px;
     text-decoration: none;
 }
-
 .alle-produkter span {
     display: inline-block;
     margin-left: 5px;
     transition: transform 0.2s ease;
 }
-
 .alle-produkter:hover span,
 .alle-produkter:focus-visible span {
     transform: translateX(4px);
 }
 
+/* Produkt grid layout */
 .produkt-grid {
     display: flex;
     gap: 18px;
@@ -372,7 +249,7 @@ header a {
     scroll-snap-type: x proximity;
     scrollbar-width: thin;
 }
-
+/* Produkt kort med effekter */
 .produkt-kort {
     flex: 0 0 240px;
     min-width: 240px;
@@ -382,48 +259,47 @@ header a {
     box-shadow: 0 6px 18px rgba(47, 62, 47, 0.1);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-
 .produkt-kort:hover {
     box-shadow: 0 12px 24px rgba(47, 62, 47, 0.17);
     transform: translateY(-4px);
 }
-
+/* produkt billedet */
 .produkt-kort img {
     display: block;
     width: 100%;
     aspect-ratio: 1.25;
     object-fit: cover;
 }
-
+/* Produkt boks størrelse */
 .produkt-info {
     padding: 16px;
 }
-
+/* Produktets navn */
 .produkt-info h3 {
     min-height: 42px;
-    color: #2f3e2f;
+    color: #36541d;
     font-size: 16px;
     line-height: 1.3;
 }
-
+/* Lokationen for produktet */
 .produkt-info p {
     margin: 0 0 12px;
     color: #718074;
     font-size: 13px;
 }
-
+/* Produktets pris */
 .produkt-info strong {
     display: block;
     margin-bottom: 14px;
-    color: #2f3e2f;
+    color: #36541d;
     font-size: 14px;
 }
-
+/* Dette er "se mere" knappen effekt */
 .produkt-info a {
     display: inline-block;
     border-radius: 8px;
-    background: #45674e;
-    color: #fff;
+    background: #36541d;
+    color: #f5f1e8;
     font-size: 13px;
     font-weight: 700;
     padding: 9px 12px;
@@ -432,9 +308,9 @@ header a {
 
 .produkt-info a:hover,
 .produkt-info a:focus-visible {
-    background: #5d8f70;
+    background: #66874A;
 }
-
+/* Dette er en media query, der ændrer layoutet for skærme med en bredde på 680px eller mindre. */
 @media (max-width: 680px) {
     .produkter {
         padding: 20px 20px 60px;
