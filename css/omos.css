@@ -3,6 +3,80 @@
     margin: 0;
     background-color: #F5F1E8;
 }
+__________
+--HEADER--
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    height: 10%;
+    justify-items: flex;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 5px 20px;
+    background-color: rgba(245, 241, 232, 0.782);
+    z-index: 10;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    margin-top: 1%;
+}
+
+.logo img {
+    height: 50px;
+    display: flex;
+    position: relative;
+}
+
+.bruger-links {
+    display: flex;
+    gap: 25px;
+    white-space: nowrap;
+    justify-content: flex-end;
+    height: 42px;
+    align-items: center;
+}
+
+.bruger-links a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    height: 50%;
+    color: #1B3308;
+    text-decoration: none;
+}
+
+.nav-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 24px;
+    height: 30px;
+}
+
+.nav-icon img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+header a {
+    color: #1B3308;
+    text-decoration: none;
+    font-family: "airbnb-cereal-app", sans-serif;
+    text-decoration: none;
+    font-weight: 700; 
+    font-size: 15px;
+    display: flex;
+    height: 30px;   
+}
 
 h1 {
     color: #1B3308;
