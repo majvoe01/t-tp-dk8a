@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tæt på DK</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Header med logo, navigation og brugerlinks -->
+
+<header>
+
+    <div>
+        <h1>
+            <a href="/" class="logo">
+                <img src="logo med tekst færdig.png" alt="Tæt På DK">
+            </a>
+        </h1>
+    </div>
+
+    <nav>
+        <a href="#">Planlæg</a>
+        <a href="#">Udforsk</a>
+        <a href="#">Fællesskab</a>
+        <a href="#">Om os</a>
+    </nav>
+
+    <div class="bruger-links">
+
+        <a href="#">
+            <span class="nav-icon">❤</span>
+            <span>Gem</span>
+        </a>
+
+        <a href="#">
+            <span class="nav-icon">
+                <img src="account.png" alt="profil">
+            </span>
+            <span>Profil</span>
+        </a>
+
+        <a href="#">
+            <span class="nav-icon">
+                <img src="shopping-bag.png" alt="kurv">
+            </span>
+            <span>Book</span>
+        </a>
+
+    </div>
+
+</header>
+
+
+<!--Hero-->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h2>
+            Tættere på,<br>
+            end du tror.
+        </h2>
+
+        <p>Planlæg din rejse i Danmark</p>
+
+        <a href="#step1" class="hero-button">
+            Byg din rute
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- QUIZ OG KORT -->
+
+<div class="quiz-kort-layout">
+
+
+    <div class="quiz-area">
+
+        <section id="step1" class="quiz-step">
+
+            <h2>Hvad vil du opleve?</h2>
+            <p>Vælg en eller flere ting</p>
+
+            <button>
+                <span>🥾 Vandreture</span>
+            </button>
+
+            <button>
+                <span>🌿 Natur</span>
+            </button>
+
+            <button>
+                <span>🏖️ Strand</span>
+            </button>
+
+            <button>
+                <span>🏙️ Storbyer</span>
+            </button>
+
+            <button>
+                <span>🏛️ Museer</span>
+            </button>
+
+            <button>
+                <span>🎭 Kultur</span>
+            </button>
+
+            <button>
+                <span>🎨 Kunst & Design</span>
+            </button>
+
+            <button>
+                <span>🎉 Events</span>
+            </button>
+
+            <button>
+                <span>🎢 Aktiviteter</span>
+            </button>
+
+            <button>
+                <span>☕ Caféer & Restauranter</span>
+            </button>
+
+            <button>
+                <span>🌃 Byliv & Social</span>
+            </button>
+
+            <button>
+                <span>🧘 Wellness</span>
+            </button>
+
+            <button class="nextButton1">
+                <span>Næste</span>
+            </button>
+
+        </section>
+
+        <section id="step2" class="quiz-step">
+
+            <h2>Hvordan vil du rejse?</h2>
+            <p>Vælg en eller flere transportformer</p>
+
+            <button>
+                <span>🚗 Bil</span>
+            </button>
+
+            <button>
+                <span>🚶 Gå</span>
+            </button>
+
+            <button>
+                <span>🚆 Offentlig transport</span>
+            </button>
+
+            <button>
+                <span>🚴 Cykel</span>
+            </button>
+
+            <button class="nextButton2">
+                <span>Næste</span>
+            </button>
+
+            <button class="backButton1">
+                <span>Tilbage</span>
+            </button>
+
+        </section>
+
+        <section id="step3" class="quiz-step">
+
+            <h2>Hvem rejser med dig?</h2>
+            <p>Vælg en eller flere</p>
+
+            <button>
+                <span>👤 Solo</span>
+            </button>
+
+            <button>
+                <span>🫂 Venner</span>
+            </button>
+
+            <button>
+                <span>👨‍👩‍👧‍👦 Familie</span>
+            </button>
+
+            <button>
+                <span>👥 Gruppe</span>
+            </button>
+
+            <button>
+                <span>💑 I par</span>
+            </button>
+
+            <button class="nextButton3">
+                <span>Næste</span>
+            </button>
+
+            <button class="backButton2">
+                <span>Tilbage</span>
+            </button>
+
+        </section>
+
+        <section id="step4" class="quiz-step">
+
+            <h2>Hvor starter turen?</h2>
+            <p>Vælg dit udgangspunkt</p>
+
+            <button>
+                <span>København</span>
+            </button>
+
+            <button>
+                <span>Aarhus</span>
+            </button>
+
+            <button>
+                <span>Odense</span>
+            </button>
+
+            <button>
+                <span>Aalborg</span>
+            </button>
+
+            <input type="text" placeholder="Søg efter din by...">
+
+            <button class="nextButton4">
+                <span>Næste</span>
+            </button>
+
+            <button class="backButton3">
+                <span>Tilbage</span>
+            </button>
+
+        </section>
+
+        <section id="step5" class="quiz-step">
+
+            <h2>Hvad er dit budget for hele turen?</h2>
+            <p>Vælg dit maksimale budget</p>
+
+            <button>
+                <span>Under 2.000 kr.</span>
+            </button>
+
+            <button>
+                <span>2.000-6.000 kr.</span>
+            </button>
+
+            <button>
+                <span>6.000-10.000 kr.</span>
+            </button>
+
+            <button>
+                <span>Over 10.000 kr.</span>
+            </button>
+
+            <button class="nextButton5">
+                <span>Næste</span>
+            </button>
+
+            <button class="backButton4">
+                <span>Tilbage</span>
+            </button>
+
+        </section>
+
+
+        <section id="step6" class="quiz-step">
+
+            <h2>Hvor lang tid har du?</h2>
+            <p>Vælg antal dage</p>
+
+            <input type="range" min="1" max="28" value="3">
+
+            <button>
+                <span>Weekend</span>
+            </button>
+
+            <button>
+                <span>1 uge</span>
+            </button>
+
+            <button>
+                <span>1 måned</span>
+            </button>
+
+            <button class="nextButton6">
+                <span>Næste</span>
+            </button>
+
+            <button class="backButton5">
+                <span>Tilbage</span>
+            </button>
+
+        </section>
+
+
+        <section id="step7" class="quiz-step">
+
+            <h2>Hvor mange stop vil du opleve?</h2>
+            <p>Vælg dit rejsetempo</p>
+
+            <button>
+                <span>Ét sted</span>
+                <p>Dyb udforskning af ét område</p>
+            </button>
+
+            <button>
+                <span>Afslappet tempo</span>
+                <p>2-3 destinationer med god tid</p>
+            </button>
+
+            <button>
+                <span>Balanceret rundtur</span>
+                <p>4-5 destinationer</p>
+            </button>
+
+            <button>
+                <span>Seriøs sight-seeing</span>
+                <p>6-8 destinationer</p>
+            </button>
+
+            <button>
+                <span>Se alt muligt</span>
+                <p>9+ destinationer</p>
+            </button>
+
+            <button class="nextButton7">
+                <span>Næste</span>
+            </button>
+
+            <button class="backButton6">
+                <span>Tilbage</span>
+            </button>
+
+        </section>
+
+
+        <section id="step8" class="quiz-step">
+
+            <h2>Hvad er din geografiske rækkevidde?</h2>
+            <p>Vælg en eller flere muligheder</p>
+
+            <button>
+                <span>Ét område</span>
+                <p>Fokuseret på et enkelt område</p>
+            </button>
+
+            <button>
+                <span>Flere områder</span>
+                <p>Udforsk forskellige regioner</p>
+            </button>
+
+            <button>
+                <span>Hele Danmark</span>
+                <p>Se så meget som muligt</p>
+            </button>
+
+            <button>
+                <span>Ø-hop</span>
+                <p>Besøg flere danske øer</p>
+            </button>
+
+            <button class="nextButton8">
+                <span>Næste</span>
+            </button>
+
+            <button class="backButton7">
+                <span>Tilbage</span>
+            </button>
+
+        </section>
+
+        <section id="step9" class="quiz-step">
+
+            <h2>Hvad er dine overnatningspræferencer?</h2>
+            <p>Vælg en eller flere</p>
+
+            <button>
+                <span>Hoteller</span>
+            </button>
+
+            <button>
+                <span>Hostels</span>
+            </button>
+
+            <button>
+                <span>Bed & Breakfast</span>
+            </button>
+
+            <button>
+                <span>Shelters</span>
+            </button>
+
+            <button>
+                <span>Airbnb</span>
+            </button>
+
+            <button>
+                <span>Camping</span>
+            </button>
+
+            <button class="backButton8">
+                <span>Tilbage</span>
+            </button>
+
+            <button class="Build-button">
+                <span>Byg min rute</span>
+            </button>
+
+        </section>
+
+    </div>
+
+
+    <!--Interaktivt kort-->
+
+    <section class="udforsk">
+
+        <div class="udforsk-content">
+
+            <h2>Udforsk kortet</h2>
+
+            <p>Find inspiration til din tur</p>
+
+            <div class="udforsk-buttons">
+
+                <button>
+                    <span>Aktiviteter</span>
+                </button>
+
+                <button>
+                    <span>Dk's flotteste kyster</span>
+                </button>
+
+                <button>
+                    <span>Shelters</span>
+                </button>
+
+                <button>
+                    <span>Seværdigheder</span>
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="udforsk-kort">
+
+            <div class="kort">
+
+                <img src="dk.jpg" alt="Kort over Danmark">
+
+
+
+                <div class="map-marker" style="left: 12%; top: 32%;">
+
+                    <div class="marker-dot"></div>
+
+                    <div class="marker-popup">
+
+                        <img src="Thy.jpg" alt="Nationalpark Thy">
+
+                        <div class="marker-popup-text">
+                            <span>Nordvestjylland</span>
+                            <strong>Nationalpark Thy</strong>
+                            <p>Vild natur, skove og Vesterhavets kyst.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="map-marker" style="left: 43%; top: 8%;">
+
+                    <div class="marker-dot"></div>
+
+                    <div class="marker-popup">
+
+                        <img src="img/vestjylland.jpg" alt="Råbjerg Mile">
+
+                        <div class="marker-popup-text">
+                            <span>Nordjylland</span>
+                            <strong>Råbjerg Mile</strong>
+                            <p>Oplev dramatisk landskab tæt på skagen.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="map-marker" style="left: 52%; top: 49%;">
+
+                    <div class="marker-dot"></div>
+
+                    <div class="marker-popup">
+
+                        <img src="molsbjerge.jpg" alt="Mols Bjerge">
+
+                        <div class="marker-popup-text">
+                            <span>Djursland</span>
+                            <strong>Mols Bjerge</strong>
+                            <p>Bakker med flotte udsigter og vandreruter.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="map-marker" style="left: 16%; top: 85%;">
+
+                    <div class="marker-dot"></div>
+
+                    <div class="marker-popup">
+
+                        <img src="vadehavet.jpg" alt="Vadehavet">
+
+                        <div class="marker-popup-text">
+                            <span>Sydvestjylland</span>
+                            <strong>Vadehavet</strong>
+                            <p>Gå på vandet, og se de flotteste solnedgange.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="map-marker" style="left: 80%; top: 90%;">
+
+                    <div class="marker-dot"></div>
+
+                    <div class="marker-popup">
+
+                        <img src="hero.jpg" alt="Møns Klint">
+
+                        <div class="marker-popup-text">
+                            <span>Sydsjælland</span>
+                            <strong>Møns Klint</strong>
+                            <p>Danmarks smukkeste klitter og klipper.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+
+<!-- Inspo Annas ide -->
+
+<section class="inspiration-section">
+
+    <article class="inspiration-card roadtrip">
+
+        <div class="card-content">
+
+            <h3>Roadtrip</h3>
+
+            <p>Oplev Danmarks perler</p>
+
+            <a href="#">Se roadtrips →</a>
+
+        </div>
+
+    </article>
+
+
+    <article class="inspiration-card hike">
+
+        <div class="card-content">
+
+            <h3>Vandreture</h3>
+
+            <p>Find skove og kyststier</p>
+
+            <a href="#">Se ruter →</a>
+
+        </div>
+
+    </article>
+
+
+    <article class="inspiration-card bike">
+
+        <div class="card-content">
+
+            <h3>Cykelferie</h3>
+
+            <p>Ferie på to hjul</p>
+
+            <a href="#">Se cykelture →</a>
+
+        </div>
+
+    </article>
+
+
+    <article class="sustainability-card">
+
+        <span class="leaf">●</span>
+
+        <h3>Bæredygtigt</h3>
+
+        <p>Rejs med omtanke</p>
+
+        <span>Din tur kan spare -</span>
+
+        <strong>42 kg CO₂</strong>
+
+        <p>
+            sammenlignet med en almindelig flyrejse.
+        </p>
+
+        <a href="#">Læs mere her →</a>
+
+    </article>
+
+</section>
+
+
+<!-- små oplevelser Annes ide -->
+
+<div class="moods-baggrund">
+
+    <section class="moods">
+
+        <div class="moods-header">
+
+            <div>
+                <h2>Små oplevelser</h2>
+                <p>Oplevelser der kun tager 2–5 timer</p>
+            </div>
+
+            <a href="#">Se alle →</a>
+
+        </div>
+
+
+        <div class="mood-grid">
+
+
+            <article class="mood-card">
+
+                <img src="img/ølsmagning.jpg" alt="Ølsmagning på en båd">
+
+                <div class="mood-overlay">
+                    <span>Odense, Fyn</span>
+                    <h3>Ølsmagning på en båd</h3>
+                    <p>🍺 Mad & drikke · 3 timer</p>
+                </div>
+
+            </article>
+
+
+            <article class="mood-card">
+
+                <img src="img/surf.jpg" alt="Surfing i Klitmøller">
+
+                <div class="mood-overlay">
+                    <span>Klitmøller</span>
+                    <h3>Surfing</h3>
+                    <p>🌊 Det danske hav · 4 timer</p>
+                </div>
+
+            </article>
+
+
+            <article class="mood-card">
+
+                <img src="img/klatrepark.jpg" alt="Skovtårnet og klatrepark">
+
+                <div class="mood-overlay">
+                    <span>Sydsjælland</span>
+                    <h3>Skovtårnet & klatrepark</h3>
+                    <p>🥾 Aktivitet · 5 timer</p>
+                </div>
+
+            </article>
+
+
+            <article class="mood-card">
+
+                <img src="img/Middelfart.jpg" alt="Marsvinsafari i Lillebælt">
+
+                <div class="mood-overlay">
+                    <span>Middelfart</span>
+                    <h3>Marsvinsafari i Lillebælt</h3>
+                    <p>🐬 Natur · 2 timer</p>
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skjulte perler -->
+
+    <section class="moods">
+
+        <div class="moods-header">
+
+            <div>
+                <h2>Skjulte perler</h2>
+                <p>Små steder og oplevelser, du måske ikke kendte</p>
+            </div>
+
+            <a href="#">Se alle →</a>
+
+        </div>
+
+
+        <div class="mood-grid">
+
+
+            <article class="mood-card">
+
+                <img src="img/mønsklint.jpg" alt="Møns Klint">
+
+                <div class="mood-overlay">
+                    <span>Møns Klint</span>
+                    <h3>Den store klippe</h3>
+                    <p>Natur & ro</p>
+                </div>
+
+            </article>
+
+
+            <article class="mood-card">
+
+                <img src="img/vestjylland.jpg" alt="Rubjerg Knude">
+
+                <div class="mood-overlay">
+                    <span>Rubjerg Knude</span>
+                    <h3>En vandring værd</h3>
+                    <p>Dramatisk landskab</p>
+                </div>
+
+            </article>
+
+
+            <article class="mood-card">
+
+                <img src="img/palmestrand.jpg" alt="Frederikshavn Palmestrand">
+
+                <div class="mood-overlay">
+                    <span>Frederikshavn Palmestrand</span>
+                    <h3>Det tropiske Danmark</h3>
+                    <p>Eksotisk</p>
+                </div>
+
+            </article>
+
+
+            <article class="mood-card">
+
+                <img src="img/frederiksborg.jpg" alt="Frederiksborg Slot">
+
+                <div class="mood-overlay">
+                    <span>Frederiksborg Slot</span>
+                    <h3>På tur i kultur</h3>
+                    <p>Historisk</p>
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+</div>
+
+
+<!-- Beige footer -->
+
+<footer class="benefits">
+
+    <div>
+
+        <span>⌂</span>
+
+        <p>
+            <strong>Støt de lokale steder</strong><br>
+            Vi hjælper der, hvor vi kan.
+        </p>
+
+    </div>
+
+
+    <div>
+
+        <span>🌿</span>
+
+        <p>
+            <strong>Mere natur, mindre stress</strong><br>
+            Kom tættere på det, der betyder noget.
+        </p>
+
+    </div>
+
+
+    <div>
+
+        <span>✅</span>
+
+        <p>
+            <strong>Rejs ansvarligt</strong><br>
+            vælg de grønne valg.
+        </p>
+
+    </div>
+
+
+    <div>
+
+        <span>📍</span>
+
+        <p>
+            <strong>Danmark vores smukke hjem</strong><br>
+            Oplev nyt, tæt på.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- Grøn footer-->
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+
+        <div class="footer-brand">
+
+            <h2>TÆT PÅ DK</h2>
+
+            <p>
+                Oplev mere af Danmark.<br>
+                Tættere på, end du tror.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h3>Om Tæt på DK</h3>
+
+            <a href="#">Om os</a>
+            <a href="#">FAQ</a>
+            <a href="#">Kontakt</a>
+            <a href="#">Privatlivspolitik</a>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h3>Oplev</h3>
+
+            <a href="#">Byg din rute</a>
+            <a href="#">Udforsk</a>
+            <a href="#">Fællesskab</a>
+            <a href="#">Backpack DK</a>
+
+        </div>
+
+
+        <div class="footer-newsletter">
+
+            <h3>Få inspiration hver måned</h3>
+
+            <p>
+                Modtag vores nyhedssbrev for nye oplevelser, inspiration, ruter og rabatter 
+            </p>
+
+            <div class="newsletter-form">
+
+                <input
+                    type="email"
+                    placeholder="Din e-mail"
+                >
+
+                <button type="button">
+                    Tilmeld →
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>© 2026 Tæt på DK</p>
+
+        <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">TikTok</a>
+            <a href="#">Facebook</a>
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="javascript.js"></script>
+
+</body>
+</html>

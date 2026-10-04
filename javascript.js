@@ -1,3 +1,4 @@
+// Quiz
 const answers = {};
 
 let currentStep = 1;
@@ -5,9 +6,7 @@ let currentStep = 1;
 const steps = document.querySelectorAll(".quiz-step");
 
 
-// ========================================
-// NÆSTE-KNAPPER
-// ========================================
+// Næste buttons
 
 const nextButtons = document.querySelectorAll("[class^='nextButton']");
 
@@ -23,9 +22,7 @@ nextButtons.forEach(function(button, index) {
 });
 
 
-// ========================================
-// TILBAGE-KNAPPER
-// ========================================
+// Tilbage buttons
 
 const backButtons = document.querySelectorAll("[class^='backButton']");
 
@@ -41,22 +38,8 @@ backButtons.forEach(function(button, index) {
 });
 
 
-// ========================================
-// BYG MIN RUTE
-// ========================================
+// Spørgsmål 1
 
-const buildButton = document.querySelector(".Build-button");
-
-buildButton.addEventListener("click", function() {
-
-    console.log(answers);
-
-});
-
-
-// ========================================
-// STEP 1 - OPLEVELSER
-// ========================================
 
 const step1 = document.getElementById("step1");
 
@@ -81,9 +64,7 @@ OplevelseButtons.forEach(function(button) {
 });
 
 
-// ========================================
-// STEP 2 - TRANSPORT
-// ========================================
+// Spørgsmål 2
 
 const step2 = document.getElementById("step2");
 
@@ -112,9 +93,7 @@ transportButtons.forEach(function(button) {
 });
 
 
-// ========================================
-// STEP 3 - HVEM REJSER DU MED
-// ========================================
+// Spørgsmål 3
 
 const step3 = document.getElementById("step3");
 
@@ -143,9 +122,7 @@ travelerButtons.forEach(function(button) {
 });
 
 
-// ========================================
-// STEP 4 - STARTSTED
-// ========================================
+// Spørgsmål 4
 
 const step4 = document.getElementById("step4");
 
@@ -185,9 +162,7 @@ startInput.addEventListener("input", function() {
 });
 
 
-// ========================================
-// STEP 5 - BUDGET
-// ========================================
+// Spørgsmål 5
 
 const step5 = document.getElementById("step5");
 
@@ -216,9 +191,7 @@ budgetButtons.forEach(function(button) {
 });
 
 
-// ========================================
-// STEP 6 - VARIGHED
-// ========================================
+// Spørgsmål 6
 
 const step6 = document.getElementById("step6");
 
@@ -258,9 +231,7 @@ durationInput.addEventListener("input", function() {
 });
 
 
-// ========================================
-// STEP 7 - TEMPO
-// ========================================
+// Spørgsmål 7
 
 const step7 = document.getElementById("step7");
 
@@ -289,9 +260,7 @@ traveltempoButtons.forEach(function(button) {
 });
 
 
-// ========================================
-// STEP 8 - OMRÅDE
-// ========================================
+// Spørgsmål 8
 
 const step8 = document.getElementById("step8");
 
@@ -320,9 +289,7 @@ radiusButtons.forEach(function(button) {
 });
 
 
-// ========================================
-// STEP 9 - OVERNATNING
-// ========================================
+// Spørgsmål 9
 
 const step9 = document.getElementById("step9");
 
@@ -351,9 +318,18 @@ OvernatningButtons.forEach(function(button) {
 });
 
 
-// ========================================
-// SKJUL ALLE STEPS UNDTAGEN STEP 1
-// ========================================
+// Byg knap
+
+const buildButton = document.querySelector(".Build-button");
+
+buildButton.addEventListener("click", function() {
+
+    console.log(answers);
+
+});
+
+
+// Skjul alle steps undtaget spørgsmål 1
 
 steps.forEach(function(step, index) {
 
@@ -364,10 +340,7 @@ steps.forEach(function(step, index) {
 });
 
 
-// ========================================
-// SELECTED KNAPPER
-// + GØR NÆSTE-KNAPPEN MØRKEGRØN
-// ========================================
+// Gør det muligt at vælge flere svar i spørgsmålene
 
 const answerButtons = document.querySelectorAll(
     ".quiz-step button:not([class^='nextButton']):not([class^='backButton']):not(.Build-button)"
@@ -377,34 +350,20 @@ answerButtons.forEach(function(button) {
 
     button.addEventListener("click", function() {
 
-        // Gør valget selected / ikke selected
         button.classList.toggle("selected");
 
-
-        // Find det step, som valget ligger i
         const step = button.closest(".quiz-step");
 
-
-        // Find Næste-knappen i det samme step
         const nextButton = step.querySelector("[class^='nextButton']");
 
-
-        // Find alle selected valg i dette step
         const selectedButtons = step.querySelectorAll(".selected");
 
-
-        // Hvis dette step har en Næste-knap
         if (nextButton) {
 
-            // Hvis mindst ét valg er selected
             if (selectedButtons.length > 0) {
-
                 nextButton.classList.add("active");
-
             } else {
-
                 nextButton.classList.remove("active");
-
             }
 
         }
