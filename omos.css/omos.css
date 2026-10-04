@@ -1,0 +1,438 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F5F1E8;
+}
+/* Header */
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+
+    padding: 5px 20px;
+    background-color: rgba(245, 241, 232, 0.782);
+    z-index: 10;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    margin-top: 1%;
+}
+
+.logo img {
+    height: 50px;
+    display: flex;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    gap: 80px;
+    white-space: nowrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4b554c;
+    font-family: "airbnb-cereal-app", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+}
+
+nav a:hover {
+    color: #66874A;
+}
+
+.bruger-links {
+    display: flex;
+    gap: 25px;
+    white-space: nowrap;
+    justify-content: flex-end;
+    height: 42px;
+    align-items: center;
+}
+
+.bruger-links a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    height: 50%;
+    color: #1B3308;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.nav-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 30px;
+}
+
+.nav-icon img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+/*text første -p- virker ikke*/
+
+h1 {
+    color: #1B3308;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+p {
+    color: #222222;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.textbox4 h2, .textbox5 h2 {
+    color: #F5F1E8;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.textbox4 p, .textbox5 p {
+    color: #F5F1E8;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/*header*/
+
+.headphoto {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.headphoto img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: 50% 30%;
+    display: block;
+}
+
+/*første del*/
+
+main, section, .part1 {
+    width: 100%;
+    max-width: none;
+}
+
+.part1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "tekst1 mairs"
+        "skagen tekst2";
+    gap: 30px 55px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px;
+}
+ 
+.textbox1 {
+    grid-area: tekst1;
+}
+ 
+.mairs {
+    grid-area: mairs;
+}
+ 
+.skagen {
+    grid-area: skagen;
+}
+ 
+.textbox2 {
+    grid-area: tekst2;
+}
+ 
+.part1 img {
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+} 
+
+/*bæredygtighed*/
+
+main, section, .part2 {
+    width: 100%;
+    max-width: none;
+}
+
+.part2 {
+    width: 100%;
+    background-color: #A1BA8C;
+    min-height: 200px;
+    padding: 30px;
+}
+
+.textbox3 {
+    margin-left: 5%;
+    width: 45%;
+}
+
+/*billedegalleri*/
+
+main, section, .photo-gallery {
+    width: 100%;
+    max-width: none;
+}
+
+.photo-gallery {
+   display: flex; 
+}
+
+.photo {
+    width: 25%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/*tredje del*/
+
+main, section, .part3 {
+    width: 100%;
+    max-width: none;
+}
+
+.part3 {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.textbox4, .textbox5 {
+    background-color: #66874A;
+    padding: 30px;
+    border-radius: 10px;
+    width: 35%;
+}
+/* Beige footer */
+
+.benefits {
+    padding: 30px 6%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    background: #f5f1e8;
+}
+
+.benefits div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.benefits span {
+    font-size: 25px;
+}
+
+.benefits p {
+    margin: 0;
+
+    color: #2f3e2f;
+
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.benefits strong {
+    color: #2f3e2f;
+    font-size: 14px;
+}
+
+
+/* Grøn footer */
+
+.footer {
+    background-color: #1B3308;
+    color: white;
+
+    padding: 65px 6% 25px;
+}
+
+.footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr 1.7fr;
+    gap: 60px;
+}
+
+
+.footer-brand h2 {
+    margin: 0 0 18px;
+
+    font-family: "airbnb-cereal-app", sans-serif;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.footer-brand p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.7);
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+.footer h3 {
+    margin: 0 0 20px;
+
+    font-family: "airbnb-cereal-app", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-links a {
+    margin-bottom: 12px;
+
+    color: rgba(255, 255, 255, 0.72);
+
+    text-decoration: none;
+    font-size: 14px;
+
+    transition: 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+
+.footer-newsletter p {
+    max-width: 350px;
+
+    margin: 0 0 18px;
+
+    color: rgba(255, 255, 255, 0.7);
+
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.newsletter-form {
+    display: flex;
+
+    max-width: 380px;
+    padding: 5px;
+
+    background-color: white;
+
+    border-radius: 12px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    min-width: 0;
+
+    padding: 12px;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: #1B3308;
+}
+
+.newsletter-form button {
+    padding: 11px 18px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #66874A;
+    color: white;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #BEDBAA;
+}
+
+
+.footer-bottom {
+    max-width: 1400px;
+
+    margin: 55px auto 0;
+    padding-top: 22px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-bottom p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    font-size: 12px;
+}
+
+.social-links {
+    display: flex;
+    gap: 25px;
+}
+
+.social-links a {
+    color: white;
+
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.social-links a:hover {
+    opacity: 0.65;
+}
